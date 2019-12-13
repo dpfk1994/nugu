@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NUGU Test</title>
+
+    <!-- 웹 폰트 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css"> <!-- 200,300,400,700 -->
+
+    <style>
+        * {margin: 0; padding: 0; font-family: 'Nanum Barun Gothic', sans-serif;}
+        .container {width: 1240px; margin: 0 auto;}
+
+        #section1 {
+            background: url(https://tistory1.daumcdn.net/tistory/3344013/skin/images/img7.png), url(https://tistory1.daumcdn.net/tistory/3344013/skin/images/img8.png);
+            background-color: #009dff;
+            background-position: center top, center right -280px;
+            background-repeat: no-repeat, no-repeat;
+            background-size: 1920px 500px, 1150px 450px;
+        }
+        #section2 {
+            background: url(https://tistory2.daumcdn.net/tistory/3344013/skin/images/img2.png);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: contain;
+        }
+        #section3 {background: #f7f9fa;}
+
+        .sec1 {padding: 10% 0; color: #fff;}
+        .sec1 h2 img {width: 250px;}
+        .sec1 p {padding: 2% 0 1% 0; margin-right: 53%; line-height: 1.7; font-size: 20px; font-weight: 700; word-break: keep-all;}
+        .sec1 a {text-decoration: none; color: #fff;}
+
+        .sec2 {
+            overflow: hidden; padding: 7% 0;
+            background-image: url(https://tistory1.daumcdn.net/tistory/3344013/skin/images/img1.png), url(https://tistory1.daumcdn.net/tistory/3344013/skin/images/img.png);
+            background-repeat: no-repeat;
+            background-position: top 145px left 400px, top 145px right;
+            background-size: 150px 120px;
+        }
+        .sec2 .side1 {border-right: 1px dashed #999; width: 50%; float: left;}
+        .sec2 .side2 {width: 45%; float: right;}
+        .sec2 .side1 h2 {font-size: 35px;}
+        .sec2 .side1 p {padding: 3% 0 2% 0; margin-right: 46%; word-break: keep-all; line-height: 1.7;}
+        .sec2 .side1 a {text-decoration: none; color: #b8b4ba; font-size: 14px;}
+        .sec2 .side2 h2 {font-size: 35px;}
+        .sec2 .side2 p {padding: 3% 0 2% 0; margin-right: 42%; word-break: keep-all; line-height: 1.7;}
+        .sec2 .side2 a {text-decoration: none; color: #b8b4ba; font-size: 14px;}
+
+        .sec3 {display: flex; padding: 30px 0 50px 0;}
+        .sec3 > div {width: 24.25%; margin-right: 1%; }
+        .sec3 > div:last-child {margin-right: 0;}
+        .sec3 > div figure {
+            background: url(https://tistory1.daumcdn.net/tistory/3344013/skin/images/img3.png); width: 100%;
+            background-size: contain;
+            border-radius: 5%;
+        }
+        .container h3 {padding: 5% 0 0 0; font-size: 30px;}
+        .sec3 h2 {text-align: center; line-height: 170px; font-size: 30px;}
+        .sec3 span {color: #019dff;}
+        .sec3 > div figcaption {background: #fff; padding: 20px; font-size: 16px; border-radius: 0 0 5% 5%; font-weight: bold;}
+        .sec3 > div figcaption a {display: block; padding-top: 20%; text-decoration: none; color: #b8b4ba; font-size: 14px;}
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <section id="section1">
+            <div class="container">
+                <div class="sec1">
+                    <h2><img src="https://tistory1.daumcdn.net/tistory/3344013/skin/images/img6.png" alt="제목이미지"></h2>
+                    <p>NUGU SDK를 통해 인터넷이 연결되는 디바이스와 애플리케이션에서 손쉽게 NUGU 플랫폼에 연결할 수 있습니다. 음성인식 기반의 다양한 AI 서비스 이용 경험을 제공해 보세요.</p>
+                    <a href="#">더보기 〉</a>
+                </div>
+            </div>
+        </section>
+        <!-- //section1 -->
+        <section id="section2">
+            <div class="container">
+                <div class="sec2">
+                    <div class="side1">
+                        <h2>Play Builder</h2>
+                        <p>NUGU는 간단한 코드 정의와 예시 문장 입력만으로 손쉽게 NUGU 디바이스 및 애플리케이션에서 사용 가능한 AI 서비스를 만들 수 있는 개발 툴을 지원합니다.
+                        </p>
+                        <a href="#">더보기 〉</a>
+                    </div>
+                    <div class="side2">
+                        <h2>NUGU biz</h2>
+                        <p>회의실, 병원, 호텔처럼 공용의 공간에서 모두가 NUGU 서비스를 이용하거나, 내가 초대한 사용자에게만 AI 서비스를 제공할 수 있습니다.</p>
+                        <a href="#">더보기 〉</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="container">
+                <h3>NUGU 개발 가이드</h3>
+                <div class="sec3">
+                    <div>
+                        <figure>
+                            <h2>NUGU<span> SDK</span></h2>
+                            <figcaption>
+                                NUGU SDK 사용하기
+                                <a href="#">더보기 〉</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <h2>NUGU<span> play</span></h2>
+                            <figcaption>
+                                Play Builder로 Play 만들기
+                                <a href="#">더보기 〉</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <h2>NUGU<span> biz</span></h2>
+                            <figcaption>
+                                Setup Tool 설치 및 디바이스 등록
+                                <a href="#">더보기 〉</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <h2>NUGU<span> play</span></h2>
+                            <figcaption>
+                                Play Builder 지원 도구
+                                <a href="#">더보기 〉</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test01</title>
+
+    <!-- 웹 폰트 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css"> <!-- 200,300,400,700 -->
+
+    <style>
+        /* 전체 레이아웃 */
+        * {margin: 0; padding: 0; font-family: 'Nanum Barun Gothic', sans-serif;}
+        .container {width: 1200px; margin: 0 auto;}
+        #section1 {
+            background-image: url(https://tistory3.daumcdn.net/tistory/3344013/skin/images/img1.png), url(https://tistory3.daumcdn.net/tistory/3344013/skin/images/img.png);
+            background-repeat: no-repeat;
+            background-position: top 200px left 750px, top 195px right 360px;
+            background-size: 150px 120px, 150px 125px;
+            }
+        #section2 {background: #f1f1f1; border-top: 1px solid #e2e7ea;}
+
+        /* section1 */
+        .sec1 {overflow: hidden; padding: 10% 0;}
+        .side1 {float: left; width: 50%; border-right: 1px dashed #e2e7ea;}
+        .side2 {float: right; width: 44%;}
+        .side1 h2 {font-size: 40px; padding-bottom: 5%;}
+        .side2 h2 {font-size: 40px; padding-bottom: 5%;}
+        .side1 p {font-size: 17px; font-weight: bold; padding-right: 40%; word-break: keep-all; padding-bottom: 3%; line-height: 1.7;}
+        .side2 p {font-size: 17px; font-weight: bold; padding-right: 40%; word-break: keep-all; padding-bottom: 3%; line-height: 1.7;}
+        .side1 a {text-decoration: none; color: #b1b4be;}
+        .side2 a {text-decoration: none; color: #b1b4be;}
+
+        /* section2 */
+        #section2 h2 {font-size: 30px; padding-top: 5%;}
+        .sec2 {display: flex; padding: 30px 0 50px 0;}
+        .sec2 > div {width: 24.25%; margin-right: 1%; background-color: #fff; border-radius: 2% 2% 2% 2%;  border: 1px solid #e2e7ea;}
+        .sec2 > div:last-child {margin-right: 0;}
+        .sec2 > div figure {
+            background: url(https://tistory3.daumcdn.net/tistory/3344013/skin/images/img3.png) no-repeat;
+            width: 100%; 
+            background-size: contain;
+            padding-bottom: 5%;
+        }
+        .sec2 figure h3{font-size: 30px; text-align: center; line-height: 170px;}
+        .sec2 figure span{color: #05a0ff;} 
+        .sec2 > div figcaption {padding: 5% 8% 0 8%; font-size: 15.5px; font-weight: bold;}
+        .sec2 > div figcaption a {display: block; padding: 15% 0 2% 0; color: #b1b4be; text-decoration: none; font-size: 14px;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <section id="section1">
+            <div class="container">
+                <div class="sec1">
+                    <div class="side1">
+                        <h2>Play Builder</h2>
+                        <p>NUGU는 간단한 코드 정의와 예시 문장 입력만으로 손쉽게 NUGU 디바이스 및 애플리케이션에서 사용 가능한 AI 서비스를 만들 수 있는 개발 툴을 지원합니다.</p>
+                        <a href="#">더보기 〉</a>
+                    </div>
+                    <div class="side2">
+                        <h2>NUGU biz</h2>
+                        <p>회의실, 병원, 호텔처럼 공용의 공간에서 모두가 NUGU 서비스를 이용하거나, 내가 초대한 사용자에게만 AI 서비스를 제공할 수 있습니다.</p>
+                        <a href="#">더보기 〉</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section1 -->
+
+        <section id="section2">
+            <div class="container">
+                <h2>NUGU 개발 가이드</h2>
+                <div class="sec2">
+                    <div>
+                        <figure>
+                            <h3>NUGU<span> SDK</span></h3>
+                            <figcaption>
+                                NUGU SDK 사용하기
+                                <a href="#">더보기 〉</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <h3>NUGU<span> play</span></h3>
+                            <figcaption>
+                                Play Builder로 Play 만들기
+                                <a href="#">더보기 〉</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <h3>NUGU<span> biz</span></h3>
+                            <figcaption>
+                                Setup Tool 설치 및 디바이스 등록
+                                <a href="#">더보기 〉</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <h3>NUGU<span> play</span></h3>
+                            <figcaption>
+                                Play Builder 지원 도구
+                                <a href="#">더보기 〉</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section2 -->
+    </div>
+</body>
+</html>
